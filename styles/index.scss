@@ -1,3 +1,6 @@
+@use font;
+
+
 body {
     max-width: 1360px;
     width: 100%;
@@ -108,14 +111,6 @@ body {
         mix-blend-mode: normal;
         opacity: 0.6;
     }
-
-
-
-
-
-
-
-
 
 .gallery {
     display:grid;
@@ -385,6 +380,50 @@ body {
 }
 
 
+
+/*>>>>>>>>>>>>styling for PRODUCT DETAILS>>>>>>>>>>>*/
+
+.intro2 {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1109px;
+    width: 100%;
+    min-height: 345px;
+    margin:20px;
+
+}
+
+/*stop*/
+.intro2__item1 {
+    display:flex;
+    /*order reversed*/
+    align-items: flex-start;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    text-align: left;
+
+    width: 635px;
+    margin: 20px
+
+}
+
+.intro2__item2 {
+    display:flex;
+    flex-direction: row;
+    /*order reversed*/
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 335px;
+
+}
+
+
 /*FOOTER!*/
 
 .footer {
@@ -404,9 +443,14 @@ body {
     padding:10px;
 }
 
-.btn--stylees {
+.btn--icon {
     background: none;
     border: none;
     width: 15px;
     height: 15px;
 }
+
+
+
+@import "contact" ;
+@import "productdetails" ;
