@@ -1,5 +1,5 @@
 body {
-    max-width: 1360px;
+    max-width: 1200px;
     width: 100%;
     min-height: 1375px;
     
@@ -417,31 +417,35 @@ body {
     padding:20px;
 } 
 
+
+
+
+/*---------------------------css for PRODUCT DETAILS page--------------------------*/
 /*-------------------------flex container-------------------------*/
 .mid2 {
     display: flex;
     justify-content: center;
-    align-items: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
-    .mid2__item1, .woman-img, .img1B__format {
+    .mid2__item1, .img1B__format {
         display:flex;
         justify-content: center;
         align-items: center;
         max-width: 1100px;
         min-height: 660px;
         width:100%;
-        margin: 20px;
+        margin: 10px;
     }
-    .mid2-item2 {
+
+    .mid2__item2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 1090px;
+        max-width: 1100px;
         min-height: 93px;
         width:100%;
-        padding:10px;
-        margin: 20px;
+        margin: 10px;
     }
 
 /*-------------------------------------------another flex container---------------------------------------------*/
@@ -453,7 +457,8 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        
+        margin:20px;
+
     }
         .mid2__images--item {
             display: flex;
@@ -467,7 +472,7 @@ body {
 
 
 /*-----------------------------------------css for contact page----------------------------------------*/
-/*----------------------------------I TRY NESTED CSS CLASSES-------------------------------------------*/
+/*-----------------I TRY NESTED CSS CLASSES but it didnt work (does flex layout work with nesting)--------------------*/
 .contact {
     display:flex;
     flex-direction: row;
@@ -508,10 +513,12 @@ body {
     align-items: flex-start;
     width:475px;
     text-align: left;
+    padding: 20px;
     margin:10px;       
 }
 .contact__item2box {
     display: flex;
+
 }
 
 
@@ -539,16 +546,17 @@ body {
     padding-bottom: 20px;
 }
 
-.footer__items {
-    display: flex;
-    margin: 10px;
-    padding:10px;
-}
+    .footer__items {
+        display: flex;
+        margin: 10px;
+        
+    }
 
-.btn--icon {
-    background: none;
-    border: none;
-    width: 15px;
-    height: 15px;
-    margin: 10px;
-}
+    .btn--icon {
+        display: flex;
+        background: none;
+        border: none;
+        width: 15px;
+        height: 15px;
+        margin: 10px;
+    }
