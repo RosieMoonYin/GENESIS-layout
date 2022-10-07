@@ -417,57 +417,57 @@ body {
     padding:20px;
 } 
 
-
+/*-------------------------flex container-------------------------*/
 .mid2 {
     display: flex;
     justify-content: center;
     align-items: space-around;
     flex-wrap: wrap;
 }
-    .woman-img .img1B__format {
+    .mid2__item1, .woman-img, .img1B__format {
+        display:flex;
+        justify-content: center;
+        align-items: center;
         max-width: 1100px;
         min-height: 660px;
         width:100%;
         margin: 20px;
     }
     .mid2-item2 {
-        max-width: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1090px;
         min-height: 93px;
         width:100%;
+        padding:10px;
         margin: 20px;
     }
 
-    .mid2__images {
+/*-------------------------------------------another flex container---------------------------------------------*/
+.mid2__images {
+        max-width: 1100px;
+        width:100%;
+        min-height: 400px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         
     }
         .mid2__images--item {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             width:350px;
             height:400px;
+            margin:5px;
         }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
+/*-----------------------------------------css for contact page----------------------------------------*/
+/*----------------------------------I TRY NESTED CSS CLASSES-------------------------------------------*/
 .contact {
     display:flex;
     flex-direction: row;
@@ -477,43 +477,45 @@ body {
     max-width: 1110px;
     min-height: 380px;
     padding:10px;
-
 }
 
     .contact__item1 {
-
-        display: flex;
-        flex-direction: column;
-
-        align-items: space-around;
-        flex-wrap: wrap;
-
+            display: flex;
+            flex-direction: column;
+            align-items: space-around;
+            flex-wrap: wrap;  
     }
 
-            .contact__item1a {
-                display: flex;
-                width:475px;
-                text-align: left;
-                margin:10px;
-            }
+        .contact__item1a {
+                            display: flex;
+                            width:475px;
+                            text-align: left;
+                            margin:10px;
+                        }
 
 
-            .contact__item1b {
-                display: flex;
-                width: 445px;
-                text-align: left;
-                margin:10px;
-            }
+        .contact__item1b {
+                            display: flex;
+                            width: 445px;
+                            text-align: left;
+                            margin:10px;
+                        }
 
-    .contact__item2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        width:475px;
-        text-align: left;
-        margin:10px;
-    }
+.contact__item2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:475px;
+    text-align: left;
+    margin:10px;       
+}
+.contact__item2box {
+    display: flex;
+}
+
+
+
 
 .map {
     display: flex;
