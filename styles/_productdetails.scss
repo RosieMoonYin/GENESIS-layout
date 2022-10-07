@@ -1,6 +1,6 @@
 @use "font";
 
-/*>>>>>>>>>>>>styling for PRODUCT DETAILS>>>>>>>>>>>*/
+/*>>>>>>>>>>>>styling for PRODUCT DETAILS>>>>>>>>>>>
 
 .intro2 {
     display: flex;
@@ -15,10 +15,10 @@
 
 }
 
-/*stop*/
+/*stop
 .intro2__item1 {
     display:flex;
-    /*order reversed*/
+
     align-items: flex-start;
     justify-content: center;
 
@@ -33,11 +33,42 @@
 .intro2__item2 {
     display:flex;
     flex-direction: row;
-    /*order reversed*/
+    
     align-items: flex-end;
     justify-content: center;
     flex-wrap: wrap;
     text-align: left;
     width: 335px;
+
+}*/
+
+.intro2 {
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.intro2__item1 {
+        display:grid;
+        grid-column: 1 /4;
+        grid-row: 1 /2;
+}
+
+.intro2__item1B {
+    display:grid;
+    grid-column: 1 /5;
+    grid-row: 2 /4;
+}
+
+.intro2__item2 {
+    display:grid;
+    grid-column: 5 /6;
+    grid-row: 6 /7;
+}
+
+.intro2__item2B {
+    display: grid;
+    grid-column: 6 /7;
+    grid-row: 1 /4;
 
 }
