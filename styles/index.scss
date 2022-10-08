@@ -13,6 +13,9 @@ body {
     flex-wrap: wrap;*/
 }
 
+a:link {
+    text-decoration: none;
+}
 
 .header {
     max-width: 1109px;
@@ -33,6 +36,7 @@ body {
 
         .logo .header__logo {
             display:flex;
+            /*not aligning to the left ... why???*/
             justify-self: flex-start;
             height: 19.3px;
             width: 90.1px;
@@ -83,7 +87,7 @@ body {
     }
 
     .intro__item--styles2 {
-        font-family: 'Mulish';
+        font-family: $main-font;
         text-align: left;
         font-style: normal;
         font-weight: 700;
@@ -103,17 +107,29 @@ body {
         margin:10px;
         padding-right: 20px;
     }
-    .intro__item--styles3 {       
-        font-family: 'Mulish';
+
+    .intro__item--styles3A {
+        font-family: $main-font;
         font-style: italic;
         font-weight: 400;
         font-size: 18px;
         line-height: 23px;
-        /* identical to box height */
-
         color: #111111;
         mix-blend-mode: normal;
         opacity: 0.6;
+
+    }
+    .intro__item--styles3 {       
+       
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #111111;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+
     }
 
 .gallery {
@@ -216,7 +232,7 @@ body {
     }
 
         .mid__text--h5 {
-            font-family: 'Mulish';
+            font-family: $main-font;
             font-style: normal;
             font-weight: 700;
             font-size: 28px;
@@ -342,7 +358,7 @@ body {
     }
 
 .awards__item--h4, .CSSawards__item--h4 {
-    font-family: 'Mulish';
+    font-family: $main-font;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -352,7 +368,7 @@ body {
     color: #111111;
 }
 .awards__item--h5,  .CSSawards__item--h5 {
-    font-family: 'Mulish';
+    font-family: $main-font;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -363,7 +379,7 @@ body {
 
 }
 .awards__item--h6, .CSSawards__item--h6  {
-    font-family: 'Mulish';
+    font-family: $main-font;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -372,7 +388,7 @@ body {
 
 }
 .item--p {
-    font-family: 'Mulish';
+    font-family: $main-font;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -475,7 +491,7 @@ body {
 
 
 /*-----------------------------------------css for contact page----------------------------------------*/
-/*-----------------I TRY NESTED CSS CLASSES but it didnt work (does flex layout work with nesting)--------------------*/
+/*-----------------I TRY NESTED CSS CLASSES but it didnt work (does flex layout work with nesting??)--------------------*/
 .contact {
     display:flex;
     flex-direction: row;
@@ -524,9 +540,6 @@ body {
 
 }
 
-
-
-
 .map {
     display: flex;
     max-width:1100px;
@@ -534,7 +547,6 @@ body {
     min-height:570px;
     margin: 20px;
 }
-
 
 .footer {
     max-width: 1109px;
@@ -552,11 +564,13 @@ body {
     .footer__items {
         display: flex;
         margin: 10px;
+        align-items: center;
         
     }
 
     .btn--icon {
         display: flex;
+        align-items: center;
         background: none;
         border: none;
         width: 15px;
