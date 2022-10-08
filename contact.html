@@ -20,10 +20,10 @@
             <nav>
                 <ul class="header__item header__item--styles">
                     <li class="header__item--styles headerfooter--link">
-                        <a class="headerfooter--link" href=#projects>Projects</a>
+                        <a class="headerfooter--link" href="projectdetails.html">Projects</a>
                     </li>
                     <li class="header__item--styles">
-                    <a class="headerfooter--link" href=#contact>Contact</a>
+                    <a class="headerfooter--link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -31,41 +31,54 @@
     </header>
 
 
-    <section>
-        <div>
-            <h2>Full set of great features to make you product fresh</h2>
-            <p>Our favourite brands are our friends! We help them to achieve their goals, they help us stay sharp.</p>
+    <!--**********************************CONTACT PAGE*******************************************-->
+    <section class="contact">
+
+        <div class="contact__item1 intro__item--styles2">
+            <h2 class="contact__item1a intro__item--styles2">Full set of great features to make you product fresh</h2>
+            <p class="contact__item1b intro__item--styles3">Our favourite brands are our friends! We help them to achieve their goals, they help us stay sharp.</p>
         </div>
         
-        <div>
+        <!--HELP! and tips how to get the input areas to be underlined??-->
+        <form action>
+        <div class="contact__item2 intro__item--styles3">
+                <div class="contact__item2box">
+                    <label class="intro__item--styles3" for="name">Name:</label>
+                    <input class="contact__item2--input" type="name" id="name"><br>
+                </div>
 
-            <!--HELP! ann tips how to get the input areas to be underlined??-->
+                <div  class="contact__item2box">
+                    <label class="intro__item--styles3" for="email">Email:</label>
+                    <input class="contact__item2--input" type="email" id="email"><br>
+                </div>
 
-            <form action="">
+                <div  class="contact__item2box">
+                    <label class="intro__item--styles3" for="text">Message:</label>
+                    <input class="contact__item2--input" type="text" id="message"><br>
+                </div>
+
                 <div>
-                    <label for="name">Name:</label>
-                    <input type="name" id="name">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email">
-                    <label for="text">Message:</label>
-                    <input type="text" id="message">
                     <button class="clickbutton--styles" type="submit">Submit</button>
                 </div>
+            </div>
             </form>
         </div>
-        <img src="../GENESIS-layout/images/Map-img1C.png" alt="map">
+
+        <div class="woman-img">
+            <img class="map" src="images/Map-img1C.png" alt="map">
+        </div>
     </section>
-    
+        
 
     <footer class="footer">
         <img class="footer__logo" src="images/Logo.svg" alt="logo">
         <nav>
             <ul class="footer__items footer__items--styles">
                 <li>
-                    <a class="headerfooter--link" href="#projects">Projects</a>
+                    <a class="headerfooter--link" href="projectdetails.html">Projects</a>
                 </li>
                 <li>
-                    <a class="headerfooter--link" href="#contacts">Contact</a>
+                    <a class="headerfooter--link" href="contact.html">Contact</a>
                 </li>
                 <li>
                     <button class="btn--icon" type="icon"><img src="images/icon-drbl.png"></button>
@@ -79,3 +92,5 @@
             </ul>
         </nav>
     </footer>
+</body>
+</html>
